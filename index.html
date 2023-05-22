@@ -9,25 +9,38 @@
     <link rel="icon" href="resources/images/favicon.png" />
     <link rel="stylesheet" href="resources/style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <script defer src="script.js"></script>
   </head>
   <body>
+    <nav>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#about-me">About Me</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#roadmap">Roadmap</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
     <header>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-link"><a href="#about-me">About Me</a></li>
-          <li class="nav-link"><a href="#projects">Projects</a></li>
-          <li class="nav-link"><a href="#skills">Skills</a></li>
-          <li class="nav-link"><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>My landing page | Yonatan Malca</h1>
+      <h1>
+        Hello! My name is
+        <br />
+        <span class="name">Yonatan Malca.</span>
+        <br />
+        I'm a full-stack software engineer
+      </h1>
     </header>
     <main>
       <section id="about-me">
         <h2>About Me</h2>
         <p>
-          Welcome, My name is Yonatan Malca, I'm a full-stack developer student
+          Welcome! My name is Yonatan Malca, I'm a full-stack developer student
           based in Modi'in, Israel. I have started coding since 2020 and I'm
           currently studying alongside my military service.
           <br />
@@ -40,39 +53,34 @@
       </section>
       <section id="projects">
         <h2>Come see my projects!</h2>
-        <span>This is a fine selections of my works so far:</span>
         <div class="projects-container">
           <div class="project">
-            <h3 class="project-name">Project name</h3>
-            <img src="" alt="" class="project-screenshot" />
-            <div class="project-links-container">
-              <a href="#">Github link</a>
-              <a href="#">Site link</a>
+            <div class="project-header">
+              <h3>Project name</h3>
+              <div class="project-links">
+                <ion-icon name="logo-github"></ion-icon>
+                <a href="#" target="_blank">Github Repository</a>
+                <ion-icon name="globe-outline"></ion-icon>
+                <a href="#" target="_blank">Website</a>
+              </div>
             </div>
-            <div class="project-skills-container">
+            <div class="project-body">
               <img
-                src="resources/images/html5.svg"
-                alt="HTML5 language icon"
-                class="project-skill"
+                src="resources/images/project-screenshot.png"
+                alt="Project Screenshot"
               />
-              <img
-                src="resources/images/css3.svg"
-                alt="CSS3 language icon"
-                class="project-skill"
-              /><img
-                src="resources/images/js.svg"
-                alt="JS language icon"
-                class="project-skill"
-              />
+              <p>A short description of the project</p>
             </div>
-            <p class="project-description">
-              A short description of the project
-            </p>
+            <div class="project-languages">
+              <ion-icon name="logo-html5" size="large"></ion-icon>
+              <ion-icon name="logo-css3" size="large"></ion-icon>
+              <ion-icon name="logo-javascript" size="large"></ion-icon>
+            </div>
           </div>
         </div>
       </section>
-      <section id="skills">
-        <div class="timeline">
+      <section id="roadmap">
+        <div class="roadmap">
           <div class="container left">
             <div class="content">
               <h2>2020</h2>
@@ -85,26 +93,95 @@
             </div>
           </div>
           <div class="container right">
-            <h2>2021</h2>
-            <h3>Started my first course</h3>
-            <p>
-              As a military solider, I didn't have the time or resources to
-              invest in a full university degree, so I started to learn
-              JavaScript on my own from Jonas schmedtmann at Udemy
-            </p>
+            <div class="content">
+              <h2>2021</h2>
+              <h3>Started my first course</h3>
+              <p>
+                As a military solider, I didn't have the time or resources to
+                invest in a full university degree, so I started to learn
+                JavaScript on my own from Jonas schmedtmann at Udemy
+              </p>
+            </div>
           </div>
           <div class="container left">
-            <h2>2022</h2>
-            <h3>Started my second course</h3>
-            <p>
-              After falling in love with web development, I've decided to learn
-              HTML and CSS as well so I'll have the power to create whatever I
-              want and manipulate it on my own, So I've started Jonas's HTML&CSS
-              course
-            </p>
+            <div class="content">
+              <h2>2022</h2>
+              <h3>Started my second course</h3>
+              <p>
+                After falling in love with web development, I've decided to
+                learn HTML and CSS as well so I'll have the power to create
+                whatever I want and manipulate it on my own, So I've started
+                Jonas's HTML&CSS course
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h2>2023</h2>
+              <h3>Started learning at Codecademy</h3>
+              <p>
+                In order to expand my knowledge further and have the reputation
+                for my resume and job applications, I've enrolled into the
+                Full-Stack engineer career path in Codecademy.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-icons">
+          <a
+            href="https://github.com/Johnny1352"
+            class="icon"
+            title="Come see my GitHub page"
+            target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a
+            href="https://twitter.com/JohnnyMalca2"
+            class="icon"
+            title="Check out my Twitter account"
+            target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+          <a
+            href="https://www.linkedin.com/"
+            class="icon"
+            title="Go see my LinkedIn account"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </div>
+        <div class="contact-container">
+          <div class="contact-item">
+            <ion-icon name="mail-open-outline"></ion-icon
+            ><span>yonimalca@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <ion-icon name="call-outline"></ion-icon
+            ><span>+972-52-362-8914</span>
           </div>
         </div>
       </section>
     </main>
+    <footer>
+      <nav>
+        <ul class="nav-list footer-nav">
+          <li><a class="nav-link" href="#about-me">About Me</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#roadmap">Roadmap</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
